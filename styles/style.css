@@ -60,7 +60,7 @@ nav {
     height: 450px;
 }
 
-.Work_buttom {
+.Work_button {
     margin: auto;
     text-align: center;
     background-color: #eb7d4b;
@@ -68,9 +68,11 @@ nav {
     width: 290px;
     height: 70px;
     box-shadow: 0px 5px rgba(200, 106, 64, 1);
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 5%;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
 
 .services {
@@ -130,6 +132,14 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
     flex-wrap: nowrap;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    nav {
+        margin-left: 20%;
+    }
 }
 
 .team {
@@ -266,6 +276,7 @@ nav {
     padding-right: 15px;
     color: black;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .button:active {
@@ -297,19 +308,19 @@ nav {
 }
 
 .load_more_projects {
-    text-transform: uppercase;
     color: white;
     background-color: #17c2a4;
     border-radius: 10px;
     width: 290px;
     height: 70px;
     box-shadow: 0px 5px rgba(20, 165, 140, 1);
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 2%;
     margin-bottom: 5%;
     cursor: pointer;
     text-align: center;
     margin: auto;
+    font-weight: bold;
 }
 
 .say {
@@ -391,6 +402,8 @@ nav {
     margin-right: 1%;
     margin-left: 1%;
     border-radius: 10px;
+    color: white;
+    padding-left: 1%;
 }
 
 .email {
@@ -400,36 +413,42 @@ nav {
     margin-right: 1%;
     margin-left: 1%;
     border-radius: 10px;
+    color: white;
+    padding-left: 1%;
 }
 
-input::placeholder {
-    color: white;
-    padding-left: 3%;
-}
+
 
 .message {
     height: 200px;
-    width: 875px;
+    width: 66%;
     background-color: #273a71;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 3%;
+    text-align: start;
+    padding-left: 2%;
+    padding-top: 1%;
+    color: white;
+    
 }
 
+
 .send_message {
-    text-transform: uppercase;
     color: white;
     background-color: #30bae7;
     border-radius: 10px;
     width: 290px;
     height: 70px;
     box-shadow: 0px 5px rgba(41, 158, 197, 1);
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 2%;
     margin-bottom: 5%;
     cursor: pointer;
     text-align: center;
     margin: auto;
+    color: white;
+    font-weight: bold;
 }
 
 .otstup {
@@ -521,4 +540,63 @@ input::placeholder {
 .github:hover {
     color: #30bae7;
     cursor: pointer;
+}
+
+.dsa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dsa .circle:hover .square {
+    color: #14a58c;
+}
+
+@media screen and (max-width: 900px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-right: 4%;
+    }
+    nav {
+        width: 100%;
+    }
+    .topnav .responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+        color: white;
+    }
+    header .responsive {
+        height: 340px;
+    }
+    .topnav .responsive a.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+    .topnav .responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .Work_button {
+        width: 150px;
+    }
+    .load_more_projects {
+        width: 200px;
+    }
+    .send_message {
+        width: 150px;
+    }
+    
+    .laptop {
+        width: 380px;
+        height: 200px;
+    }
 }
